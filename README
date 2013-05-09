@@ -1,0 +1,29 @@
+This is a collection of utilities to control Dell Inspiron and
+Latitude laptops. It includes programs to turn the fan on and off,
+to read fan status, CPU temperature, BIOS version and to handle the
+volume buttons and Fn-keys. The package includes also a small Tk
+applet, designed to be swallowed in the GNOME panel, which monitors
+the CPU temperature and controls automatically the fans accordingly
+to user defined thresholds. The programs require the kernel module
+i8k.o which can be compiled from the package sources or found in
+Linux kernel 2.4.14 and later versions.
+
+Notes:
+- even if the source code of the i8k kernel module is included in
+the i8kutils tarball, this SlackBuild takes care of the provided
+userspace tools *only*, since the i8k module has been part of the
+mainline kernel tree for a long time (>=2.4.14), and thus it should
+be compiled along with the kernel itself.
+Make sure the module is loaded before using i8kutils.
+
+- i8kutils tarball includes a diagnostic utility named smm, claimed
+to be dangerous by the developer (see comments at the top of smm
+source file, smm.c). Compilation of smm is therefore disabled by
+default; set the variable SMM=yes to enable it:
+
+	# SMM=yes ./i8kutils.SlackBuild
+
+Mind also that compilation of smm should fail on Slackware64,
+but the SlackBuild will try anyway.
+smm can damage your data and your hardware, so be careful and use
+it only if you know what you're doing.
