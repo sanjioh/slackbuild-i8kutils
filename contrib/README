@@ -1,0 +1,4 @@
+Optimized temperature thresholds for various Dell laptop models.
+Put them in your i8kmon.conf.
+Settings are *NOT* tested or verified by me (unless specified); they are
+contributions by other i8kutils users. Pull requests are welcome.

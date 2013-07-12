@@ -1,0 +1,6 @@
+# Credits to Luca Milani
+
+set config(0)   {{- 0}  -1  48  -1  50}
+set config(1)   {{- 1}  40  60  43  60}
+set config(2)   {{- 2}  50  70  50  70}
+set config(3)   {{- 2}  60 128  65 128}

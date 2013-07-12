@@ -1,0 +1,7 @@
+# personally tested by slackbuild's author
+# source: http://www.hwupgrade.it/forum/showthread.php?t=2494762
+
+set config(0)   {{- 1}  -1  54  -1  54}
+set config(1)   {{- 1}  49  64  49  64}
+set config(2)   {{- 2}  57  80  57  80}
+set config(3)   {{- 2}  70 128  70 128}
